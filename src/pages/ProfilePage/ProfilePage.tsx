@@ -1,6 +1,6 @@
-import { useEffect, useLayoutEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { getAllUsers, getUserById } from "../../app/axios/user"
+import { getAllUsers } from "../../app/axios/user"
 import { useAppSelector } from "../../app/redux/hook"
 import { User } from "../../app/types/user"
 import { EditView } from "../../components"

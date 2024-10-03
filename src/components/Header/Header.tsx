@@ -15,10 +15,3 @@ export const Header = () => {
 		</header>
 	)
 }
-
-function myFn(a: number, b: number): number
-function myFn(a: string, b: string): string
-function myFn(a: number | string, b: number | string): number | string | undefined {
-	if (typeof a === "number" && typeof b === "number") return a + b
-	if (typeof a === "string" && typeof b === "string") return a + b
-}
