@@ -1,0 +1,38 @@
+.wrapper {
+	width: 100%;
+	min-height: 80px;
+	display: flex;
+	position: relative;
+	justify-content: center;
+	align-items: center;
+	gap: 30px;
+	margin-bottom: 20px;
+}
+.wrapper::after {
+	content: "";
+	width: 100%;
+	height: 1px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	background-color: rgb(57, 57, 57);
+}
+.wrapper a {
+	position: relative;
+	font-size: 18px;
+}
+.wrapper a::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	right: 0px;
+	bottom: 5px;
+	position: absolute;
+	opacity: 0;
+	background-color: #006fee;
+	transition: all 0.15s ease-in;
+}
+.wrapper a:hover::after {
+	opacity: 1;
+	bottom: -3px;
+}

@@ -1,0 +1,11 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.wrapper div:first-child input {
+	margin-right: 10px;
+}
+.wrapper label {
+	cursor: pointer;
+}

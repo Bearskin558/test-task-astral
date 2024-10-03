@@ -1,0 +1,26 @@
+.form {
+	margin: 50px auto;
+	width: 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.button {
+	width: 250px;
+	align-self: center;
+	height: 30px;
+	background-color: #006fee;
+	border-radius: 10px;
+	color: white;
+	transition: all 0.15s ease;
+}
+.button:active {
+	transform: translateY(1px);
+}
+.message {
+	color: green;
+	align-self: center;
+}
+.errorMessage {
+	color: red;
+}

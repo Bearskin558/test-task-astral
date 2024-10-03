@@ -1,0 +1,21 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+}
+.list {
+	margin-top: 20px;
+	display: flex;
+	gap: 50px;
+	justify-content: center;
+}
+.list a {
+	color: white;
+	padding: 10px;
+	border-radius: 15px;
+	background-color: rgb(131, 125, 125);
+	transition: all 0.15s ease-in-out;
+}
+.list a:hover {
+	border-radius: 0px;
+	background-color: cornflowerblue;
+}

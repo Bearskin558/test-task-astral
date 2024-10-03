@@ -1,0 +1,72 @@
+[
+	{
+		"title": "Southwest TCP Conroe",
+		"word": "word",
+		"translation": "слово",
+		"example": "after Manager deposit",
+		"id": "1"
+	},
+	{
+		"title": "Diesel",
+		"word": "request",
+		"translation": "запрос",
+		"example": "kilogram tall Bentley",
+		"id": "2"
+	},
+	{
+		"title": "Steel",
+		"word": "response",
+		"translation": "ответ",
+		"example": "male iure Bicycle",
+		"id": "3"
+	},
+	{
+		"title": "Account Stream",
+		"word": "data",
+		"translation": "данные",
+		"example": "experiences data",
+		"id": "4"
+	},
+	{
+		"title": "honestly",
+		"word": "array",
+		"translation": "массив",
+		"example": "Trans carelessly array",
+		"id": "5"
+	},
+	{
+		"title": "Incredible aside Passenger",
+		"word": "function",
+		"translation": "функция",
+		"example": "PNG Sedan function",
+		"id": "6"
+	},
+	{
+		"title": "provoke",
+		"word": "number",
+		"translation": "число",
+		"example": "incident number",
+		"id": "7"
+	},
+	{
+		"title": "Germanium Chicken Hybrid",
+		"word": "string",
+		"translation": "строка",
+		"example": "plum string keyboard",
+		"id": "8"
+	},
+	{
+		"title": "innovate",
+		"word": "map",
+		"translation": "карта",
+		"example": "sweetly owl car",
+		"id": "9"
+	},
+	{
+		"title": "New Liaison",
+		"word": "world",
+		"translation": "мир",
+		"example": "Chair Direct reproachfully",
+		"id": "10"
+	}
+]

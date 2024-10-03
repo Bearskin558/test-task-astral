@@ -1,0 +1,23 @@
+.link {
+	position: relative;
+	font-size: 18px;
+	transition: all 0.15s ease-in;
+}
+.link::after {
+	content: "";
+	width: 100%;
+	height: 2px;
+	right: 0px;
+	bottom: 5px;
+	position: absolute;
+	opacity: 0;
+	background-color: #006fee;
+	transition: all 0.15s ease-in;
+}
+.link:hover::after {
+	opacity: 1;
+	bottom: -3px;
+}
+.active {
+	color: #006fee;
+}
