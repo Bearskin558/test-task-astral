@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { getAllUsers } from "../../app/axios/user"
+import { getUserById } from "../../app/axios/user"
 import { useAppSelector } from "../../app/redux/hook"
 import { User } from "../../app/types/user"
 import { EditView } from "../../components"
@@ -17,10 +17,10 @@ export const ProfilePage = () => {
 		}
 		const fetchUser = async () => {
 			try {
-				const responseUser = await getAllUsers()
+				const responseUser = await getUserById("1")
 				if (responseUser.status === 200) {
 					responseUser.data
-					setUser(responseUser.data.at(-1))
+					setUser(responseUser.data)
 				}
 			} catch (error) {
 				console.log(error)

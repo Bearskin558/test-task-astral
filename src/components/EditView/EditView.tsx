@@ -1,5 +1,5 @@
 import { useRef, useState } from "react"
-import { postUser } from "../../app/axios/user"
+import { putUser } from "../../app/axios/user"
 import { User } from "../../app/types/user"
 import { CheckboxField, Field, RoleFiled, TextAreaField, WorkField } from "../index"
 import styles from "./EditView.module.css"
@@ -39,8 +39,8 @@ export const EditView = ({
 				const data = Object.fromEntries(formData)
 				if (!("removal" in data)) data.removal = "false"
 				console.log(data)
-				const response = await postUser(data)
-				if (response.status === 201) {
+				const response = await putUser(data)
+				if (response.status === 200) {
 					setIsSuccess(true)
 					setTimeout(() => setIsSuccess(false), 2000)
 				} else {
