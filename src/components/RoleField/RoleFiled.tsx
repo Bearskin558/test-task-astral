@@ -7,8 +7,8 @@ interface Props {
 }
 
 export const RoleFiled = ({ value: defaultValue }: Props) => {
+	const [value, setValue] = useState<Role>(defaultValue as Role)
 	if (!(defaultValue === "admin" || defaultValue === "user")) return <p>Неверное значение</p>
-	const [value, setValue] = useState<Role>(defaultValue)
 
 	const onChangeHandler = (inputValue: string) => {
 		if (inputValue === "admin" || inputValue === "user") setValue(inputValue)

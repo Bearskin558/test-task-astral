@@ -7,11 +7,13 @@ export const Header = () => {
 	const isAuthentificated = useAppSelector(state => state.user.isAuthentificated)
 	const pathname = useLocation().pathname
 	return (
-		<header className={styles.wrapper}>
-			<HeaderLink href="/" isActive={pathname === "/"} text="Main page" />
-			<HeaderLink href="/cards" isActive={pathname === "/cards"} text="Cards" />
-			{isAuthentificated && <HeaderLink href="/profile" isActive={pathname === "/profile"} text="Profile" />}
-			{!isAuthentificated && <HeaderLink href="/login" isActive={pathname === "/login"} text="Login" />}
+		<header>
+			<nav className={styles.wrapper}>
+				<HeaderLink href="/" isActive={pathname === "/"} text="Main page" />
+				<HeaderLink href="/cards" isActive={pathname === "/cards"} text="Cards" />
+				{isAuthentificated && <HeaderLink href="/profile" isActive={pathname === "/profile"} text="Profile" />}
+				{!isAuthentificated && <HeaderLink href="/login" isActive={pathname === "/login"} text="Login" />}
+			</nav>
 		</header>
 	)
 }
